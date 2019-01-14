@@ -16,3 +16,24 @@ def display_board(board):
     
 test_board = ['#','X','O','X','O','X','O','X','O','X']
 display_board(test_board)    
+
+
+
+def player_input():
+    print('Welcome to TicTacToe')
+    marker = ' '
+    while marker!='X' and marker!='O':
+        marker = input("Player 1 : Enter to choose 'X' or '0' : ").upper()
+    
+    if(marker == 'X'):
+        player1 = 'X'
+        player2 = 'O'
+    
+    else:
+        player1 = 'O'
+        player2 = 'X'
+    
+    return (player1 , player2)
+    
+
+print(player_input())    
